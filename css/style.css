@@ -1,0 +1,129 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif; /* Cambio de la fuente a Roboto */
+}
+
+  header {
+    background-color:white;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex; /* Hace que los elementos de la lista estén en línea */
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block; /* Hace que cada enlace ocupe toda la línea */
+    padding: 10px 15px; /* Espacio alrededor del texto */
+  }
+  
+  /* Mueve el menú al lado derecho */
+  nav {
+    margin-left: auto; /* Esto empuja el menú al lado derecho */
+  }
+  
+/* Secciones */
+section {
+  padding: 20px;
+}
+  
+h2 {
+  margin-bottom: 10px;
+  text-align: center; /* Centrado del título */
+  font-weight: bold; /* Negrita */
+  font-size: 30px; /* Tamaño de 30px */
+  margin-top: 0; 
+  margin-bottom: 50px;
+}
+  
+  .about-me {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .about-me .text {
+    flex: 1;
+  }
+  
+  .about-me .image {
+    flex: 1;
+  }
+  
+  .skills, .hobbies, .education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .skill, .hobby, .item {
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 1 1 200px;
+    transition: transform 0.5s; /* Transición para el cambio de tamaño */
+  }
+  
+  .skill img, .hobby img, .item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label, input, textarea, button {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  .skill:hover img, .hobby:hover img, .item:hover img {
+    transform: scale(1.15); /* Agrandar la imagen en un 15% */
+  }
+  
+  .skill img, .hobby img, .item img {
+    width: 100px; /* Tamaño de los iconos */
+    height: 100px; /* Tamaño de los iconos */
+    margin-bottom: 10px;
+  }
+  
+  /* Ajuste para dispositivos móviles y tabletas */
+  @media (max-width: 767px) {
+    .skill, .hobby, .item {
+      flex: 1 1 100%; /* Divs con ancho completo en móvil y tablet */
+    }
+  }
